@@ -1,0 +1,22 @@
+import os
+
+def reboot():
+	#working
+	print "rebooting tiles"
+	os.system("ssh pi@192.168.1.103 sudo reboot & ssh pi@192.168.1.104 sudo reboot & ssh pi@192.168.1.105 sudo reboot & ssh pi@192.168.1.106 sudo reboot")
+	return;
+
+def updstream():
+	os.system("cvlc stream:///home/pi/Videos/kungfupanda3.mp4 --sout '#standard{access=udp,mux=ts,dst=239.0.1.23:1234}'")
+   	return;
+
+def tile();
+	os.system("pwomxplayer --tile-code=41 udp://239.0.1.23:1234?
+updstream();
+
+#reboot();
+
+
+
+
+

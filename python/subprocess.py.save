@@ -1,0 +1,7 @@
+#working
+#import os
+#os.system("ls")
+
+import pexect
+
+child = pexpect("echo \"foo\") child.expect("foo", timeout=10) # timeout in seconds child.sendline("echo \"bar\") child.expect("bar", timeout=10) child.interact() - See more at: http://www.mervine.net/executing-bash-from-python#sthash.Pb9SFAWB.dpuf
